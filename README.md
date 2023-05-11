@@ -2,7 +2,8 @@ Multi-Module project template
 ==============================
 
 This project is meant to be a minimal starting point for a multi-module gradle build setup, with
-a few dependencies already packaged and setup to have a quick start for new projects.
+utility gradle plugins, versions catalog and a few dependencies already packaged to have a quick
+start for building new projects.
 
 # Included Dependencies
 
