@@ -21,5 +21,13 @@ gradlePlugin {
             id = "awvgp.template.android.application"
             implementationClass = "AndroidComposeAppPlugin"
         }
+        register("androidLibrary") {
+            id = "awvgp.template.android.library"
+            implementationClass = "AndroidLibPlugin"
+        }
+        register("androidFeature") {
+            id = "awvgp.template.android.feature"
+            implementationClass = "AndroidFeaturePlugin"
+        }
     }
 }
