@@ -1,5 +1,7 @@
+package com.awvgp.template.composite
+
 import com.android.build.api.dsl.ApplicationExtension
-import com.awvgp.template.util.configureComposeOptions
+import com.awvgp.template.util.configureComposeSettings
 import com.awvgp.template.util.configureKotlinAndroidSettings
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -20,7 +22,7 @@ class AndroidComposeAppPlugin : Plugin<Project> {
 
             this.extensions.getByType(ApplicationExtension::class.java).apply {
                 configureKotlinAndroidSettings(this)
-                configureComposeOptions(this)
+                configureComposeSettings(this)
             }
         }
     }
