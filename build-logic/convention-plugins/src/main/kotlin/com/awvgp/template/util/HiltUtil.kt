@@ -19,7 +19,6 @@ fun Project.configureHiltSettings() {
     val libs = extensions.getByType(org.gradle.api.artifacts.VersionCatalogsExtension::class.java)
         .named("libs")
 
-    //dependencies.add("implementation", libs.findLibrary("dagger.hilt.android").get())
     dependencies {
         add("implementation", libs.findLibrary("dagger.hilt.android").get())
         add("kapt", libs.findLibrary("dagger.hilt.compiler").get())

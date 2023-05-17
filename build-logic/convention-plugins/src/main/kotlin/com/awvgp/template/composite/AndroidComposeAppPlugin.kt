@@ -2,6 +2,7 @@ package com.awvgp.template.composite
 
 import com.android.build.api.dsl.ApplicationExtension
 import com.awvgp.template.util.configureComposeSettings
+import com.awvgp.template.util.configureHiltSettings
 import com.awvgp.template.util.configureKotlinAndroidSettings
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -20,7 +21,9 @@ class AndroidComposeAppPlugin : Plugin<Project> {
                 apply("org.jetbrains.kotlin.android")
             }
 
-            this.extensions.getByType(ApplicationExtension::class.java).apply {
+            configureHiltSettings()
+
+            extensions.getByType(ApplicationExtension::class.java).apply {
                 configureKotlinAndroidSettings(this)
                 configureComposeSettings(this)
             }

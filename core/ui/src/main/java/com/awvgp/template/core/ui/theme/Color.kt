@@ -1,4 +1,4 @@
-package com.awvgp.template.ui.theme
+package com.awvgp.template.core.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

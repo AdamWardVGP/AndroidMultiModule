@@ -13,5 +13,10 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
 rootProject.name = "Template"
-include ':app'
+
+include(':app')
+include(':feature:nameinput')
+include(':feature:helloname')
+include(':core:ui')

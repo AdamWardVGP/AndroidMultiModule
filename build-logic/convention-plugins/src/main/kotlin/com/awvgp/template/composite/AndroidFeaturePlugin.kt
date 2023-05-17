@@ -19,7 +19,6 @@ open class AndroidFeaturePlugin : Plugin<Project> {
             }
             configureHiltSettings()
 
-
             val libs = extensions.getByType(VersionCatalogsExtension::class.java).named("libs")
             dependencies {
 
@@ -30,6 +29,7 @@ open class AndroidFeaturePlugin : Plugin<Project> {
                 // https://developer.android.com/topic/libraries/architecture/coroutines#dependencies
                 add("implementation", libs.findLibrary("androidx-lifecycle-viewmodel").get())
 
+                add("implementation", project(":core:ui"))
             }
         }
 
