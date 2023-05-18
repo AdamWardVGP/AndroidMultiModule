@@ -13,7 +13,6 @@ To get the ball rolling we include a few dependencies out of the box
 - Coroutines
 - Flow
 - Hilt
-- Retrofit
 - ViewModels
 
 # Attribution
