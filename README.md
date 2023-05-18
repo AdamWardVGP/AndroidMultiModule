@@ -18,5 +18,5 @@ To get the ball rolling we include a few dependencies out of the box
 
 # Attribution
 The principles here for project structure follow the architectural patterns recommended by google in
-their ![Now in Android](https://github.com/android/nowinandroid/ "Now in Android") sample.
-Additionally we follow learnings from ![Jendrik Johannes](https://github.com/jjohannes "Jendrik Johannes") for modern Gradle conventions.
+their [Now in Android](https://github.com/android/nowinandroid/ "Now in Android") sample.
+Additionally we follow learnings from [Jendrik Johannes](https://github.com/jjohannes "Jendrik Johannes") for modern Gradle conventions.
